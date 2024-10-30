@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: suha-dev
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/your-org/suha-chart-repo.git'  # Replace with your Helm chart repo
+    targetRevision: main  # Replace with the branch name you’re using
+    path: suha-app
+    helm:
+      valueFiles:
+        - values.yaml
+  destination:
+    server: 'https://kubernetes.default.svc'  # For in-cluster deployment
+    namespace: dev-suha                # Replace with the target namespace for dev
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

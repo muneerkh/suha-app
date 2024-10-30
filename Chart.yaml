@@ -1,0 +1,6 @@
+apiVersion: v2
+name: suha-chart
+description: A Helm chart for deploying an Nginx application with ServiceAccount, Service, and Route
+type: application
+version: 1.0.0
+appVersion: "1.21.0"  # Set this to the Nginx version or application version

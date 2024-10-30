@@ -1,0 +1,8 @@
+# values-uat.yaml for UAT
+replicas: 2
+serviceAccountName: "suha-app-sa-uat"
+containerName: "suha-container-uat"
+image:
+  repository: "nginx"
+  tag: "stable"
+containerPort: 80
