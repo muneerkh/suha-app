@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/muneerkh/suha-app.git'  # Replace with your Helm chart repo
     targetRevision: main  # Replace with the branch name you’re using
-    path: suha-app
+    path: .
     helm:
       valueFiles:
         - values.yaml
