@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/your-org/suha-chart-repo.git'  # Replace with your Helm chart repo
+    repoURL: 'https://github.com/muneerkh/suha-app.git'  # Replace with your Helm chart repo
     targetRevision: main  # Replace with the branch name you’re using
     path: suha-app
     helm:
